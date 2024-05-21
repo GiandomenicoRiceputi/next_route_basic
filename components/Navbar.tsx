@@ -4,23 +4,31 @@ import styles from "./navbar.module.css";
 const Navbar = () => {
   return (
     <header>
-      <nav className={styles.nav}>
-        <p>Next.js</p>
-
-        <ul className={styles.links}>
-          <Link href="/">
-            <li>Home 🏠</li>
-          </Link>
-          <Link href="/about">
-            <li>About 🐶</li>
-          </Link>
-          <Link href="/contact">
-            <li>Contact ☎️</li>
-          </Link>
-          <Link href="/products/list">
-            <li>Products 🎧 </li>
-          </Link>
-        </ul>
+      <nav className="navbar">
+        <div className="container">
+          <a href="#" className="logo">
+            Your Logo
+          </a>
+          <ul className="nav-links">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <button className="hamburger">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </button>
+        </div>
       </nav>
     </header>
   );

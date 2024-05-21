@@ -1,8 +1,10 @@
 import { CheckCircleIcon } from "@heroicons/react/16/solid";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className="h-screen flex items-center justify-center flex-row p-8">
+      <Link href="/search?q=example">Search for "example"</Link>
       <div className="space-x-4">
         <button
           type="button"
